@@ -6,19 +6,21 @@
     align-items: center;
 
 }
-li {
-    display: flex;
+ul {
+    text-align: center;
     justify-content: center;
-    align-items: center;
     list-style-type: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.5em;
-    
-
-    
-
-      
+    font-size: 2em;
+    background-color: white;      
 }
+
+li {
+    display: inline;
+    margin-right: 6em;
+}
+
+
 
 body {
     background-color: #cacaca;
@@ -30,11 +32,16 @@ body {
      font-size: 1em;
      color: black;
      background-color: #e67a7a;
-     width: 80%;
+     width: 40%;
+     height: 15em;
    margin-left: 10%;
    margin-right: 10%;
    border-radius: 0.5em;
-    
+   overflow: auto;   
+}
+
+section {
+    float: left;
 }
 
 .rechts {
@@ -49,9 +56,30 @@ footer, a {
     background-color: #525252;
     text-align: center;
     margin-top: 60px;
-    color: white; 
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+   
+       
 }
 
+footer {
+    width: 100%;
+}
 
+ul :hover {
+    text-decoration: underline;
+    color: #000080; 
+}
+
+header {
+    width: 100%;
+}
+
+main {
+   float: right;
+   overflow: auto;
+    width: 60%;
+}
 
 
