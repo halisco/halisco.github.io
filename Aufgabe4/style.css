@@ -122,9 +122,9 @@ aside :hover {
 }
    
 #ship {
-    height: 128px;
-    width: 128px;
+    height: 200px;
+    width: 200px;
     position: fixed;
-    left: 210px;
+    left: 245px;
     top: 285px;
 }
