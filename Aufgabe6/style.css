@@ -1,0 +1,290 @@
+
+
+
+/* HANDY ANSICHT (STANDARD) */
+
+
+.überschrift {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#titel {
+    width: 500px;
+    height: 200px;
+}
+
+header {
+    width: 100%;
+}
+
+
+ul {
+    text-align: left;
+    justify-content: center;
+    list-style-type: initial;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    background-color: white;
+    z-index: 110;
+    display: none;  
+}
+
+nav ul {
+    display: none;  
+}
+
+nav:hover ul {
+    display: block;
+    
+}
+
+li {
+    
+    margin-left: 2em;
+    float: left;
+}
+
+ul:nth-child(3n+1) {
+    clear: right;
+}
+
+ul:hover {
+    text-decoration: underline;
+    color: #000080;
+    display: block; 
+}
+
+nav {
+    background-color: white;
+    float: left;
+    margin-top: 1em;
+    
+    
+    
+}
+
+#zeichen {
+    list-style-type: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin-left: -0.4em;
+    top: 14em;
+    left: 1em;
+}
+
+#zeichen:hover+ul {
+    display: block;
+}
+
+
+body {
+    background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+    background-size: 110px 200px;
+    background-repeat: repeat-x;
+    z-index: 0;
+    
+}
+
+.boxen {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 1em;
+     color: white;
+     background-color: #000080;
+     width: 100%;
+     height: 15em;
+   margin-left: 0;
+   margin-right: 0;
+   margin-top: auto;
+   margin-bottom: 1%;
+   margin-top: 1%;
+   margin-left: 1%;
+   margin-right: 1%;
+   border-radius: 0.5em;
+   overflow: auto;
+    float: right;
+}
+
+
+
+
+
+.gifs {
+    float: left;
+   margin-right: 10px;
+   width: 350px;
+   border-radius: 7em;
+    
+}
+
+footer, a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    text-align: center;
+    color:black;  
+    width: 100%; 
+    max-height: 10%;
+    margin-top: 10em;
+    clear: both; 
+    
+}
+
+
+
+a {
+    position: relative;
+    bottom: 0em;   
+}
+
+
+
+
+
+main {
+    margin-top: 5em;
+    float: right;
+    width: 100%;
+}
+
+
+
+
+aside {
+  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 1em;
+     color:white;
+     width: 100%;
+     overflow: hidden;
+    height: 12.5em;
+    background-color: #000080;
+    clear: both;
+    float: left;
+    margin-top: 5em;
+   
+   
+}
+
+aside :hover {
+    
+    font-size: 0.75em;
+    text-align: center;
+    background-color: black;
+}
+   
+#ship {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 45%;
+    left:45%;
+    top: 490px;
+    
+   
+}
+
+/* TABLET ANSICHT */
+
+
+@media (min-width: 62em) {
+
+main {
+    width: 60%
+}
+
+li {
+    margin-left: 7em;
+}
+
+.boxen {
+    width: 17em;
+    height: 10em;
+}
+
+section:nth-child(2n+1) {
+    clear: right;
+}
+
+aside {
+    width: 20%;
+    height: 40em;
+    padding: 1.5em;
+    border: 1em;
+}
+
+#ship {
+    height: 130px;
+    width: 130px;
+    position: fixed;
+    left: 28%;
+    right: 70%;
+    top: 390px;
+}
+
+
+#titel {
+    width: 800px;
+}
+
+
+}
+
+
+
+/* DESKTOP ANSICHT */
+
+
+@media (min-width: 90em) {
+
+
+main {
+    width: 75%;
+}
+
+.boxen {
+    width: 20em;
+    height: 15em;
+}
+
+section:nth-child(2n+1) {
+    clear: unset;
+}
+
+section:nth-child(3n+1) {
+    clear: right;
+}
+
+
+
+aside {
+    width: 10%;
+    height: 40em;
+    padding: 1.5em;
+    border: 1em;
+}
+
+
+li {
+    margin-left: 10em;
+}
+
+#ship {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    left: 245px;
+    top: 390px;
+}
+
+#titel {
+    width: 1000px;
+    height: 200px;
+}
+
+
+}
