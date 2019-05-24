@@ -15,11 +15,11 @@ function changeTextuClass () {  //Text und Klasse ändern
     if (document.getElementById("yes").innerHTML=="The first page is always the worst page right?  Click me!") {
     document.getElementById("yes").innerHTML="Maybe, because there will always be an exception... Click again;)";
     console.log("--Text erfolgreich geändert--");
-    document.getElementById("yes").className="Stringzeile"
-    console.log("--Klasse erfolgreich geändert--"); } else {
+    } else {
     document.getElementById("yes").innerHTML="You just changed my class... how dare you!";
     console.log("--Text erfolgreich geändert--");
-    console.log("--Klasse erfolgreich geändert--"); }
+    console.log("--Klasse erfolgreich geändert--");
+    document.getElementById("yes").className="Stringzeile" }
 }
 
 function Konsole () {  //Konsolenausgaben
