@@ -1,4 +1,5 @@
 // BEISPIEL UND AUFGABE:
+
 // Dieses Skript soll als Beispiel dazu dienen, wie Interfaces und Arrays genutzt werden können.
 // Hier wird ein ungefährer Aufbau eines simplen Klick-Spiels gezeigt. Der Nutzer kann dabei durch Button ein neues Monster erstellen.
 // Zu beginn werden hier zuerst Interfaces, danach Variablen deklariert.
@@ -51,11 +52,11 @@ let suffix : string[] = [" des Verderbens", " aus der Hölle", " der Lethalität
 
 let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
 let Objects : string[] = ["Waffe","Schwert","Langhorn","Atombombe","Leaser","Fäuste"]
-let Bildquellen: string[] = ["Löwe.png", "Tiger.png", "Drache.png", "Monster.png","Krieger.png","Magier.png"]
+let Bildquellen: string[] = ["Löwe.png", "Pitbull.png", "Drache.png", "Monster.png","Krieger.png","Magier.png"]
 let PushArray: number[] = [];
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray : Monster[] = []; // Das Haupt-Array wurde erstellt und initialisiert!
-console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
+console.log(monsterArray ); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.
 
 
 // ----------- Funktionen ----------- //
