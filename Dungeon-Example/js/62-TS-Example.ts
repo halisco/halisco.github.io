@@ -47,12 +47,12 @@ let playerObjects: string = "Speer";                                            
 
 // Mehrere Arrays, welche jeweils Bauteile für Namen oder Eigenschaften der Monster beinhalten.
 let prefix : string[] = ["Wald-", "Seuchen-", "Uralte(s) ", "Gift-", "Brennende(s) ", "Kniescheibenzertrümmernde(s) "]; // length = 6, da 6 Einträge. Von 0-5.
-let monsterName : string[] = ["Morfois", "Kira", "Deus","Legend","Rapture","Light","Dark","Ryuk","big Owl","Kralle","Endgegner"]; // length = 3, da 3 Einträge. Von 0-2.
+let monsterName : string[] = ["Morfois", "Kira", "Deus","Legend","Rapture","Light"]; // length = 3, da 3 Einträge. Von 0-2.
 let suffix : string[] = [" des Verderbens", " aus der Hölle", " der Lethalität", " mit Rheuma", " der Redundanz", " der Zerberstung"]; // length = 6, da hier 6 Einträge sind. Von 0-5.
 
 let monsterModifers : string[] = ["Ist nervig", "Linkshänder", "Bier-Connoisseur", "Verfehlt häufig", "Prokrastiniert", "Müde", "Verwirrt", "Wasserscheu", "Bipolar", "Hat Schnupfen", "Verläuft sich oft"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
 let Objects : string[] = ["Waffe","Schwert","Langhorn","Atombombe","Leaser","Fäuste"]
-let Bildquellen: string[] = ["Löwe.png", "Pitbull.png", "Drache.png", "Monster.png","Krieger.png","Magier.png"]
+let Bildquellen: string[] = ["L.png","D.png","M.png","K.png","Ma.png","T.png"]
 let PushArray: number[] = [];
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray : Monster[] = []; // Das Haupt-Array wurde erstellt und initialisiert!
@@ -249,7 +249,7 @@ function updatePlayerLevel(neuObject: string)
 
 function updatePlayerObjects(neuObject: string) 
 {
-    playerName += ", " + neuObject;
+    playerObjects += ", " + neuObject;
 }
 
 function löscheMonster(_index: number) {
