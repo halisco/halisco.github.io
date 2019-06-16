@@ -5,7 +5,7 @@
 /* Basic Styles */
 body {
 	font-size: 1.0em;
-	font-family: "Courgette", sans-serif;
+	font-family: "Brush Script MT, Brush Script Std" , cursive;
 }
 
 button > img {
@@ -24,7 +24,7 @@ h1 {
 }
 
 .monster img {
-	width: 50%;
+	width: 43%;
 	margin-left: 90pt;
 }
 
