@@ -7,7 +7,7 @@ let playerName = "Spielername"; // Ein paar globale Variablen, welche den Spiele
 let playerXP = 0; // Stellt die gesammelte Erfahrung des Spielers dar.
 let playerXPperLevel = 500;
 let playerObjects = "Speer"; // Da es nur einen Spieler gibt, ergibt sich noch nicht viel Sinn darin, für den Spieler ein interface (im Sinne der Programmierung) zu erstellen.
-let playerLevel = 3;
+let playerLevel = 1;
 let winthegame = false;
 // Mehrere Arrays, welche jeweils Bauteile für Namen oder Eigenschaften der Monster beinhalten.
 let prefix = ["Wald-", "Seuchen-", "Uralte(s) ", "Gift-", "Brennende(s) ", "Kniescheibenzertrümmernde(s) "]; // length = 6, da 6 Einträge. Von 0-5.
@@ -218,7 +218,7 @@ function fightMonster(_index) {
 function updatePlayerLevel(neuObject) {
     playerLevel = (Math.floor(playerXP / playerXPperLevel)) + 1; // Spieler-Level = XP / XPproLevel
     if (playerLevel >= 20 && winthegame == false) {
-        alert("Du hasch gwonna' !");
+        alert("You Win! Game Over");
         winthegame = true;
     }
     document.getElementById("xpCounter").innerHTML = "Player-Level: " + playerLevel + " (XP: " + playerXP + " / " + playerXPperLevel * (playerLevel + 1) + ")      Objects: " + playerObjects; // Baue den String für die Spieler-Info zusammen
