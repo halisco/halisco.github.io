@@ -141,7 +141,7 @@ function CpuRunde(){
         let i = 0;
         for (i; i<CpuArray.length;i++){                                                        
             if(CpuArray[i].Kartenfarbe == SpielfeldArray[SpielfeldArray.length-1].Kartenfarbe || CpuArray[i].KartenWert == SpielfeldArray[SpielfeldArray.length-1].KartenWert){    //Wenn KartenWert ODER KartenFarbe gleich (CpuArray zu SpielfeldArray)
-                SpielfeldArray.push(SpielfeldArray[i]);                     //dann Array-switch, also legen
+                SpielfeldArray.push(CpuArray[i]);                     //dann Array-switch, also legen
                 CpuArray.splice(i, 1);
                 überschreiben("Spielfeld");
                 überschreiben("Cpukarten");
