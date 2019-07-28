@@ -1,4 +1,4 @@
-///// ----> ICH FINDE DEN FEHLER NICHT... BESSER ALS DAS SCHAFFE ICH ES LEIDER NICHT.... HATT SO FUNKTIONIERT GEHABT, ÜBER NACHT GINGS PLÖTZLICH NICHT MEHR OHNE DAS ICH WAS DARAN GEÄNDERT HABE.
+///// ----> ICH FINDE DEN FEHLER NICHT.... HATT SO FUNKTIONIERT GEHABT, ÜBER NACHT GINGS PLÖTZLICH NICHT MEHR OHNE DAS ICH WAS DARAN GEÄNDERT HABE. ES IST IRGENDEIN PROBLEM BEI DER KARTENGENERIERUNG
 let KartendeckArray; //Varibalen werden dem Interface Karten zugewiesen, mit noch leeren Arrays (Einträge dürfen nicht fest deklariert sein!)
 let SpielfeldArray;
 let CpuArray;
@@ -27,7 +27,7 @@ function Wertzuweisung() {
             }
             let NewKarte = {
                 Kartenfarbe: Farbe,
-                KartenWert: i,
+                KartenWert: i
             };
             KartendeckArray.push(NewKarte); //fügt Karten ins KartendeckArray hinzu
         }
@@ -61,8 +61,8 @@ function Spielverlauf() {
         SpielerArray.push(KartendeckArray[i]);
         CpuArray.push(KartendeckArray[i + 4]);
     }
-    SpielfeldArray.push(KartendeckArray[10]);
-    KartendeckArray.splice(0, 11);
+    SpielfeldArray.push(KartendeckArray[8]);
+    KartendeckArray.splice(0, 9);
     überschreiben("Spielfeld"); //die verschiedenen Arrays werden "überschrieben", so das Karten nur einmal vorkommen und in die jeweiligen Arrays switchen können
     überschreiben("Spielerkarten");
     überschreiben("Kartendeck");

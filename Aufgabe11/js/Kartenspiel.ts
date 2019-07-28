@@ -59,7 +59,7 @@ function Wertzuweisung (){                                          //Generierun
         }
     
     }
-console.log(KartendeckArray);
+
 }
 
 function HTMLobjekteSpieler (tempKarte: Karte, Punkt: string, index : number){                   //erstellt die Spieler-Karten im HTML als <div>
@@ -100,8 +100,8 @@ function Spielverlauf (){
         SpielerArray.push(KartendeckArray[i]);
         CpuArray.push(KartendeckArray[i+4]);
     }
-    SpielfeldArray.push(KartendeckArray[10]);
-    KartendeckArray.splice(0,11); 
+    SpielfeldArray.push(KartendeckArray[8]);
+    KartendeckArray.splice(0,9); 
      
     überschreiben("Spielfeld");                                                 //die verschiedenen Arrays werden "überschrieben", so das Karten nur einmal vorkommen und in die jeweiligen Arrays switchen können
     überschreiben("Spielerkarten");
