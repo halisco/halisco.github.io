@@ -1,0 +1,209 @@
+
+
+header {
+	background-color: gray;
+}
+
+body {
+	background-color: #DE7812;
+}
+
+.Box1 {
+	width: 11em;
+	height: 17em;
+	border-color: white;
+	border-width: 6px;
+	border-style: solid;
+	border-radius: 1.5em;
+	float: left;
+	margin-left: 1%;
+	margin-top: 7%;	
+}
+
+#Gegnerbox {
+	width: 11em;
+	height: 17em;
+	border-color: white;
+	border-width: 6px;
+	border-style: solid;
+	border-radius: 1.5em;
+	float: left;
+	margin-left: 3.5%;
+	margin-top: 7%;	
+}
+
+#Spielfeld {
+	width: 300px;
+	height: 300px;
+	border-color: white;
+	border-width: 6px;
+	border-style: dashed;
+	border-radius: 100px;
+	margin-left: 39.5%;
+	margin-top: 30%;
+	position: absolute;
+	background-color: #800000;
+
+}
+
+#Spielfeld div {
+	top: 1.5em;
+	margin-left: 21%;
+}
+
+#Kartendeck {
+	position: absolute;
+	width: 11em;
+	height: 17em;
+	border-color: white;
+	border-width: 6px;
+	border-style: groove;
+	border-radius: 1.5em;
+	margin-top: 31%;
+	margin-left: 25%;
+
+}
+
+.Box2 {
+	width: 11em;
+	height: 17em;
+	border-color: white;
+	border-width: 6px;
+	border-style: solid;
+	border-radius: 1.5em;
+	float: left;
+	margin-left: 1%;
+	margin-top: 29%;	
+}
+
+#Spielerbox {
+	width: 11em;
+	height: 17em;
+	border-color: white;
+	border-width: 6px;
+	border-style: solid;
+	border-radius: 1.5em;
+	float: left;
+	margin-left: 3.5%;
+	margin-top: 29%;	
+}
+
+img {
+	width: 95%;
+	height: 75%;
+	margin-top: 27%;
+	margin-left: 3%;
+}
+
+#Drache {
+	width: 20%;
+	height: 50%;
+	margin-left: -20%;
+	margin-top: 28%;
+	position: absolute;
+}
+
+p {
+	font-family: Papyrus, fantasy;
+	font-size: 100px;
+	color: white;
+}
+
+.Karten {
+	width: 10em;
+	height: 16em;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 1.5em;
+	margin-top: 32%;
+	margin-left: 26%;
+	background-image: url(https://cdn.pixabay.com/photo/2018/07/13/13/38/background-image-3535807_1280.jpg);
+	
+}
+
+.rose {
+	background-image: url(https://cdn.pixabay.com/photo/2017/09/07/10/09/triangle-2724449_960_720.png);
+	width: 10em;
+	height: 16em;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 1.5em;
+	float: left;
+	top: -17em;
+	left: 1.7%;
+	margin-left: 2.8%;
+	
+}
+
+.black {
+	background-image: url(https://cdn.pixabay.com/photo/2016/09/08/12/00/starry-sky-1654074_1280.jpg);
+	width: 10em;
+	height: 16em;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 1.5em;
+	float: left;
+	top: -17em;
+	left: 1.7%;
+	margin-left: 2.8%;
+	
+}
+
+.blue {
+	background-image: url(https://cdn.pixabay.com/photo/2015/04/10/08/45/background-715881_960_720.jpg);
+	width: 10em;
+	height: 16em;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 1.5em;
+	float: left;
+	top: -17em;
+	left: 1.7%;
+	margin-left: 2.8%;
+	
+}
+
+.bunt {
+	background-image: url(https://cdn.pixabay.com/photo/2016/10/05/13/13/polygon-1716642_960_720.jpg);
+	width: 10em;
+	height: 16em;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 1.5em;
+	float: left;
+	top: -17em;
+	left: 1.7%;
+	margin-left: 2.8%;
+
+}
+
+#AuflösungFloat {
+	clear: both;
+}
+
+#Cpukarten div {
+	position: relative;
+	float: right;
+	margin-left: 1%;
+	right: 2.2%;
+	margin-right: 1.8%;
+	top: -108em;
+	margin-bottom: 1%;
+	
+
+}
+
+#Kartendeck div {
+	top: -3em;
+	left: -2.25em;
+}
