@@ -1,7 +1,7 @@
 
 
 
-///// ----> ICH FINDE DEN FEHLER NICHT.... HATT SO FUNKTIONIERT GEHABT, ÜBER NACHT GINGS PLÖTZLICH NICHT MEHR OHNE DAS ICH WAS DARAN GEÄNDERT HABE.
+///// ----> ICH FINDE DEN FEHLER NICHT.... HATT SO FUNKTIONIERT GEHABT, ÜBER NACHT GINGS PLÖTZLICH NICHT MEHR OHNE DAS ICH WAS DARAN GEÄNDERT HABE. ES IST IRGENDEIN PROBLEM BEI DER KARTENGENERIERUNG
 
 
 
@@ -57,10 +57,12 @@ function Wertzuweisung (){                                          //Generierun
             }
             KartendeckArray.push(NewKarte);                         //fügt Karten ins KartendeckArray hinzu
         }
+    
     }
+console.log(KartendeckArray);
 }
 
-function HTMLobjekteSpieler (tempKarte:Karte, Punkt: string, index : number){                   //erstellt die Spieler-Karten im HTML als <div>
+function HTMLobjekteSpieler (tempKarte: Karte, Punkt: string, index : number){                   //erstellt die Spieler-Karten im HTML als <div>
     let holdingDiv: HTMLElement = document.createElement ("div");
     holdingDiv.setAttribute("class", tempKarte.Kartenfarbe);                                    //Klasse = Kartenfarbe (gespeichert im Interface)
     document.getElementById(Punkt).appendChild(holdingDiv);
