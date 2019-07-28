@@ -4,6 +4,11 @@ header {
 	background-color: gray;
 }
 
+#Name {
+	font-size: 1em;
+	font-family: 'Courier New', Courier, monospace;
+}
+
 body {
 	background-color: #DE7812;
 }

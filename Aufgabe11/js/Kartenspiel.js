@@ -1,3 +1,4 @@
+///// ----> ICH FINDE DEN FEHLER NICHT... BESSER ALS DAS SCHAFFE ICH ES LEIDER NICHT.... HATT SO FUNKTIONIERT GEHABT, ÜBER NACHT GINGS PLÖTZLICH NICHT MEHR OHNE DAS ICH WAS DARAN GEÄNDERT HABE.
 let KartendeckArray; //Varibalen werden dem Interface Karten zugewiesen, mit noch leeren Arrays (Einträge dürfen nicht fest deklariert sein!)
 let SpielfeldArray;
 let CpuArray;
@@ -25,8 +26,8 @@ function Wertzuweisung() {
                 Farbe = "rose";
             }
             let NewKarte = {
-                KartenFarbe: Farbe,
-                KartenWert: i
+                Kartenfarbe: Farbe,
+                KartenWert: i,
             };
             KartendeckArray.push(NewKarte); //fügt Karten ins KartendeckArray hinzu
         }
@@ -34,7 +35,7 @@ function Wertzuweisung() {
 }
 function HTMLobjekteSpieler(tempKarte, Punkt, index) {
     let holdingDiv = document.createElement("div");
-    holdingDiv.setAttribute("class", tempKarte.KartenFarbe); //Klasse = Kartenfarbe (gespeichert im Interface)
+    holdingDiv.setAttribute("class", tempKarte.Kartenfarbe); //Klasse = Kartenfarbe (gespeichert im Interface)
     document.getElementById(Punkt).appendChild(holdingDiv);
     let Zahl = document.createElement("p"); //erstellt den Spieler-Karten Inhalt (Wert) im HTML                                                 
     Zahl.innerHTML = "" + tempKarte.KartenWert;
@@ -68,7 +69,7 @@ function Spielverlauf() {
     überschreiben("Cpukarten");
 }
 function ablegen(tempKarte, index) {
-    if (tempKarte.KartenFarbe == SpielfeldArray[SpielfeldArray.length - 1].KartenFarbe || tempKarte.KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) { //Wenn KartenFarbe ODER KartenWert gleich der Handkarten
+    if (tempKarte.Kartenfarbe == SpielfeldArray[SpielfeldArray.length - 1].Kartenfarbe || tempKarte.KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) { //Wenn KartenFarbe ODER KartenWert gleich der Handkarten
         SpielfeldArray.push(tempKarte); //Array-switch, also legen
         SpielerArray.splice(index, 1);
         überschreiben("Spielerkarten");
@@ -96,7 +97,7 @@ function Ziehen() {
 function CpuRunde() {
     let i = 0;
     for (i; i < CpuArray.length; i++) {
-        if (CpuArray[i].KartenFarbe == SpielfeldArray[SpielfeldArray.length - 1].KartenFarbe || CpuArray[i].KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) { //Wenn KartenWert ODER KartenFarbe gleich (CpuArray zu SpielfeldArray)
+        if (CpuArray[i].Kartenfarbe == SpielfeldArray[SpielfeldArray.length - 1].Kartenfarbe || CpuArray[i].KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) { //Wenn KartenWert ODER KartenFarbe gleich (CpuArray zu SpielfeldArray)
             SpielfeldArray.push(SpielfeldArray[i]); //dann Array-switch, also legen
             CpuArray.splice(i, 1);
             überschreiben("Spielfeld");
@@ -113,7 +114,7 @@ function CpuRunde() {
         KartendeckArray.splice(KartendeckArray.length - 1, 1);
         überschreiben("Cpukarten");
         überschreiben("Kartendeck");
-        if (CpuArray[CpuArray.length - 1].KartenFarbe == SpielfeldArray[SpielfeldArray.length - 1].KartenFarbe || CpuArray[CpuArray.length - 1].KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) {
+        if (CpuArray[CpuArray.length - 1].Kartenfarbe == SpielfeldArray[SpielfeldArray.length - 1].Kartenfarbe || CpuArray[CpuArray.length - 1].KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) {
             SpielfeldArray.push(CpuArray[CpuArray.length - 1]);
             CpuArray.splice(CpuArray.length - 1, 1);
             überschreiben("Spielfeld");
@@ -124,7 +125,7 @@ function CpuRunde() {
 function KartenVergleichen(tempArray) {
     let Vergleich = false;
     for (let i = 0; i < tempArray.length; i++) {
-        if (tempArray[i].KartenFarbe == SpielfeldArray[SpielfeldArray.length - 1].KartenFarbe || tempArray[i].KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) { //Wenn KartenFarbe ODER KartenWert gleich der Arrays
+        if (tempArray[i].Kartenfarbe == SpielfeldArray[SpielfeldArray.length - 1].Kartenfarbe || tempArray[i].KartenWert == SpielfeldArray[SpielfeldArray.length - 1].KartenWert) { //Wenn KartenFarbe ODER KartenWert gleich der Arrays
             Vergleich = true;
             break;
         }
