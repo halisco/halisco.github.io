@@ -1,7 +1,7 @@
 
 
 
-///// ----> ICH FINDE DEN FEHLER NICHT... BESSER ALS DAS SCHAFFE ICH ES LEIDER NICHT.... HATT SO FUNKTIONIERT GEHABT, ÜBER NACHT GINGS PLÖTZLICH NICHT MEHR OHNE DAS ICH WAS DARAN GEÄNDERT HABE.
+///// ----> ICH FINDE DEN FEHLER NICHT.... HATT SO FUNKTIONIERT GEHABT, ÜBER NACHT GINGS PLÖTZLICH NICHT MEHR OHNE DAS ICH WAS DARAN GEÄNDERT HABE.
 
 
 
@@ -53,7 +53,7 @@ function Wertzuweisung (){                                          //Generierun
 
             let NewKarte: Karte = {                                 //Speicherort Interface-Karte
                 Kartenfarbe: Farbe,
-                KartenWert: i,
+                KartenWert: i
             }
             KartendeckArray.push(NewKarte);                         //fügt Karten ins KartendeckArray hinzu
         }
@@ -156,7 +156,7 @@ function CpuRunde(){
             KartendeckArray.splice(KartendeckArray.length-1,1);
             überschreiben("Cpukarten");
             überschreiben("Kartendeck");
-            if (CpuArray[CpuArray.length-1].Kartenfarbe ==SpielfeldArray[SpielfeldArray.length-1].Kartenfarbe || CpuArray[CpuArray.length-1].KartenWert == SpielfeldArray[SpielfeldArray.length-1].KartenWert){
+            if (CpuArray[CpuArray.length-1].Kartenfarbe == SpielfeldArray[SpielfeldArray.length-1].Kartenfarbe || CpuArray[CpuArray.length-1].KartenWert == SpielfeldArray[SpielfeldArray.length-1].KartenWert){
                 SpielfeldArray.push(CpuArray[CpuArray.length-1]);
                 CpuArray.splice(CpuArray.length-1, 1);
                 überschreiben("Spielfeld");
